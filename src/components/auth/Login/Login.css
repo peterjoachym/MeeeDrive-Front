@@ -1,0 +1,59 @@
+/* .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(54, 85, 187);
+  color: rgb(27, 129, 189);
+  background-color: black;
+  border-radius: 2rem;
+  margin: 2vh;
+  height: 6vh;
+  width: 80vw;
+}
+
+
+.title {
+  font-family: "Gochi hand";
+  font-size: 6vh;
+  color: rgb(161, 186, 201);
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+}
+
+.input {
+  background-color: rgb(107, 179, 201);
+  color: black;
+  height: 3vh;
+  border-radius: 10px;
+  width: 90%;
+  font-family: "Gochi hand";
+  font-size: 2rem;
+}
+
+.auth-submit {
+  border: 2px solid rgb(54, 85, 187);
+  color: rgb(161, 186, 201);
+  background-color: black;
+  border-radius: 4rem;
+  margin: 2vh;
+  width: 30vw;
+  height: 8vh;
+  font-family: "Gochi hand";
+  font-size: 2rem;
+} */

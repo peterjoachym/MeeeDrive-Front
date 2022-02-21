@@ -1,0 +1,28 @@
+.alert-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(54, 85, 187);
+    color: rgb(161, 186, 201);
+    background-color: black;
+    position:absolute;
+    z-index:1000;
+    border-radius: 4rem;
+}
+
+.alert-message{
+    position:absolute;
+    font-size: 3vh;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    z-index: 100001;
+    text-align: center;
+    width: 80vw;
+    height: 30vh;
+}
+
+#close{
+    z-index:121231231;
+}

@@ -1,0 +1,182 @@
+.logo-front-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:40vh;
+}
+
+.neon-title{
+ text-align: center;
+}
+
+#welcome {
+    font-size: 6vh;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    margin:1vh;
+    padding: 2vh;
+    /* padding: 4rem 6rem 5.5rem; */
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    /* text-transform: uppercase; */
+    animation: welcome-flicker 1.5s infinite alternate;     
+  }
+ 
+  #welcome::-moz-selection {
+    background-color: var(--neon-welcome-border-color);
+    color: var(--neon-welcome-text-color);
+  }
+  
+  #welcome::selection {
+    background-color: var(--neon-welcome-border-color);
+    color: var(--neon-welcome-text-color);
+  }
+  
+  #welcome:focus {
+    outline: none;
+  }
+
+  #me {
+    font-size: 10vw;
+    font-weight: 200;
+    max-width: 80%;
+    /* font-style: italic; */
+    color: #fff;
+    padding: 4rem 6rem 5.5rem;
+    margin:1vh;
+    border: 0.4rem solid #fff; 
+    border-radius: 2rem; 
+    text-transform: uppercase;
+    animation: drive-flicker 120s infinite alternate;     
+  }
+ 
+  #me::-moz-selection {
+    /* background-color: var(--neon-me-border-color); */
+    color: var(--neon-me-text-color);
+  }
+  
+  #me::selection {
+    /* background-color: var(--neon-me-border-color); */
+    color: var(--neon-me-text-color);
+  }
+  
+  #me:focus {
+    outline: none;
+  }
+
+
+
+  #drive {
+    font-size: 4vh;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1vh;
+    margin:1vh;
+    /* padding: 4rem 6rem 5.5rem; */
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    /* text-transform: uppercase; */
+    animation: drive-flicker 2.1s infinite alternate;     
+  }
+ 
+  #drive::-moz-selection {
+    background-color: var(--neon-drive-border-color);
+    color: var(--neon-welcome-text-color);
+  }
+  
+  #drive::selection {
+    background-color: var(--neon-drive-border-color);
+    color: var(--neon-drive-text-color);
+  }
+  
+  #drive:focus {
+    outline: none;
+  }
+
+  @keyframes welcome-flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-welcome-text-color),
+            0 0 4rem var(--neon-welcome-text-color),
+            0 0 6rem var(--neon-welcome-text-color),
+            0 0 8rem var(--neon-welcome-text-color),
+            0 0 10rem var(--neon-welcome-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-welcome-border-color),
+            inset 0 0 2rem var(--neon-welcome-border-color),
+            0 0 4rem var(--neon-welcome-border-color),
+            inset 0 0 4rem var(--neon-welcome-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+@keyframes drive-flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-drive-text-color),
+            0 0 4rem var(--neon-drive-text-color),
+            0 0 6rem var(--neon-drive-text-color),
+            0 0 8rem var(--neon-drive-text-color),
+            0 0 10rem var(--neon-drive-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-drive-border-color),
+            inset 0 0 2rem var(--neon-drive-border-color),
+            0 0 4rem var(--neon-drive-border-color),
+            inset 0 0 4rem var(--neon-drive-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+
+@keyframes me-flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-me-text-color),
+            0 0 4rem var(--neon-me-text-color),
+            0 0 6rem var(--neon-me-text-color),
+            0 0 8rem var(--neon-me-text-color),
+            0 0 10rem var(--neon-me-text-color);
+        
+        /* box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-me-border-color),
+            inset 0 0 2rem var(--neon-me-border-color),
+            0 0 4rem var(--neon-me-border-color),
+            inset 0 0 4rem var(--neon-me-border-color);         */
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
