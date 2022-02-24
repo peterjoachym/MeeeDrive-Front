@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Login from "../../components/auth/Login/Login";
 import AlertContext from "../../contexts/AlertContext";
 import Alert from "../../components/Alert/Alert";
-// import LogoFrontPage from "../../components/LogoFrontPage/LogoFrontPage";
 import "./Home.css";
 
 function Home() {
@@ -11,7 +10,6 @@ function Home() {
 
   return (
     <>
-      {/* <LogoFrontPage /> */}
       <Login />
       <div className="button-container">
         <Link to="/reset-password">

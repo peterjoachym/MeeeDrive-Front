@@ -30,7 +30,7 @@ function ResetPassword() {
   };
 
   return (
-    <div className="reset-password-container">
+    <>
       <form className="auth-form" onSubmit={handleSubmit}>
         <h1 className="title">Reset Password</h1>
         <label htmlFor="email" className="auth-input">
@@ -55,7 +55,7 @@ function ResetPassword() {
         </div>
       </form>
       {alertOn && <Alert />}
-    </div>
+    </>
   );
 }
 
