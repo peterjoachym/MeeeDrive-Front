@@ -38,20 +38,20 @@ function ResetPassword() {
             type="email"
             id="email"
             className="input"
-            placeholder="Enter email of your M(-_(-_-)_-)E drive account !"
+            placeholder="Enter your M(-_(-_-)_-)E mail!"
             value={email}
             onChange={handleEmail}
           />
         </label>
-        <div className="buttons">
-          <button className="auth-submit" type="submit">
-            Ask for new One
-          </button>
+        <div className="button-container">
           <Link to="/">
-            <button className="auth-submit" type="button">
+            <button className="main__button" type="button">
               Get Me Back
             </button>
           </Link>
+          <button className="main__button" type="submit">
+            Ask for new One
+          </button>
         </div>
       </form>
       {alertOn && <Alert />}

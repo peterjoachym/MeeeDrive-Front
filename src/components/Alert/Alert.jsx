@@ -12,19 +12,19 @@ const Alert = () => {
   };
 
   return (
-    <div className="alert-container">
+    <>
       <div className="alert-message-container">
         <p className="alert-message">{alertMessage}</p>
+        <button
+          id="close"
+          className="main__button"
+          type="button"
+          onClick={handleAlertCloseClick}
+        >
+          Close
+        </button>
       </div>
-      <button
-        id="close"
-        className="auth-submit"
-        type="button"
-        onClick={handleAlertCloseClick}
-      >
-        Close
-      </button>
-    </div>
+    </>
   );
 };
 

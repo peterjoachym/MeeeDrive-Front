@@ -1,19 +1,18 @@
-import React from 'react';
-import './LogoFrontPage.css';
+import React from "react";
 
 function LogoFrontPage() {
   return (
-    <div className="logo-front-container">
-      <h1 id="welcome" className="neon-title">
+    <>
+      <span id="welcome" className="heading">
         Welcome to
-      </h1>
-      <h1 id="me" className="neon-title">
+      </span>
+      <span id="me" className="heading">
         M(-_(-_-)_-)E
-      </h1>
-      <h1 id="drive" className="neon-title">
+      </span>
+      <span id="drive" className="heading">
         Drive
-      </h1>
-    </div>
+      </span>
+    </>
   );
 }
 

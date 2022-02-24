@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">{header && <LogoFrontPage />}</header>
+      <header className="header">{header && <LogoFrontPage />}</header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />

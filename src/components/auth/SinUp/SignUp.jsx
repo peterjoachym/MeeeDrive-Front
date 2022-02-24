@@ -7,6 +7,8 @@ import Alert from "../../Alert/Alert";
 
 import Actions from "../../../actions/actions";
 
+// import { UPDATE_FIRSTNAME, UPDATE_EMAIL } from "../../../actions/actions.json";
+
 const initialState = {
   firstName: "",
   email: "",
@@ -49,14 +51,14 @@ function SignUp() {
   };
 
   return (
-    <div className="page-container">
+    <>
       <form className="auth-form" onSubmit={handleSubmit}>
         <label htmlFor="email" className="auth-input">
           <input
             id="firstanme"
             type="text"
             className="input"
-            placeholder="Enter "
+            placeholder="Enter your name!"
             value={state.firsName}
             onChange={(e) =>
               dispatch({
@@ -81,17 +83,19 @@ function SignUp() {
             }
           />
         </label>
-        <button className="auth-submit" type="submit">
-          Sing Me Up
-        </button>
-        <Link to="/">
-          <button className="auth-submit" type="button">
-            Get Me Back
+        <div className="button-container">
+          <Link to="/">
+            <button className="main__button" type="button">
+              Get Me Back
+            </button>
+          </Link>
+          <button className="main__button" type="submit">
+            Sing Me Up
           </button>
-        </Link>
+        </div>
       </form>
       {alertOn && <Alert />}
-    </div>
+    </>
   );
 }
 

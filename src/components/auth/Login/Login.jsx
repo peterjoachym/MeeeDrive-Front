@@ -3,7 +3,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import AlertContext from "../../../contexts/AlertContext";
 import UserContext from "../../../contexts/UserContext";
-import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState();
@@ -39,7 +38,7 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <>
       <form className="auth-form" onSubmit={handleSubmit}>
         <label htmlFor="email" className="auth-input">
           <input
@@ -56,16 +55,16 @@ const Login = () => {
             type="password"
             id="password"
             className="input"
-            placeholder="Mot de passe"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <button className="auth-submit" type="submit">
+        <button className="main__button" type="submit">
           Log In
         </button>
       </form>
-    </div>
+    </>
   );
 };
 

@@ -1,9 +1,15 @@
 /* eslint-disable indent */
 // import Action from "../actions/actions";
 import Actions from "../actions/actions";
+// import {
+//   UPDATE_FIRSTNAME,
+//   UPDATE_EMAIL,
+//   UPDATE_IS_ADMIN,
+//   UPDATE_THEME,
+// } from "../actions/actions.json";
 
 const userProfileReducer = (state, action) => {
-  console.log(action.type);
+  // console.log(action.type);
   switch (action.type) {
     case Actions.UPDATE_FIRSTNAME:
       return { ...state, firstName: action.payload };

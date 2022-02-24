@@ -1,30 +1,32 @@
 import React, { useContext } from "react";
-import Login from "../../components/auth/Login/Login";
 import { Link } from "react-router-dom";
+import Login from "../../components/auth/Login/Login";
 import AlertContext from "../../contexts/AlertContext";
 import Alert from "../../components/Alert/Alert";
+// import LogoFrontPage from "../../components/LogoFrontPage/LogoFrontPage";
 import "./Home.css";
 
 function Home() {
   const { alertOn } = useContext(AlertContext);
 
   return (
-    <div className="home-page-container">
+    <>
+      {/* <LogoFrontPage /> */}
       <Login />
-      <div className="forgot-button-container">
+      <div className="button-container">
         <Link to="/reset-password">
-          <button className="forgot" type="button">
+          <button className="main__button" type="button">
             I need new password
           </button>
         </Link>
         <Link to="/signup">
-          <button className="forgot" type="button">
+          <button className="main__button" type="button">
             Sign me Up
           </button>
         </Link>
       </div>
       {alertOn && <Alert />}
-    </div>
+    </>
   );
 }
 

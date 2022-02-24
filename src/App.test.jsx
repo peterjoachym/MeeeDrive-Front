@@ -5,6 +5,6 @@ import App from "./App";
 
 test("renders M(-_(", () => {
   render(<App />);
-  const linkElement = screen.getByText(/M(-_(-_-)_-)E/i);
+  const linkElement = screen.getByText("M(-_(-_-)_-)E");
   expect(linkElement).toBeInTheDocument();
 });
