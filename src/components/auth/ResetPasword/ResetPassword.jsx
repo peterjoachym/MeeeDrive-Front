@@ -44,7 +44,7 @@ function ResetPassword() {
           />
         </label>
         <div className="button-container">
-          <Link to="/">
+          <Link to="/" className="link__button">
             <button className="main__button" type="button">
               Get Me Back
             </button>
