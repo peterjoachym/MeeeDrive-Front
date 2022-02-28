@@ -8,7 +8,8 @@ import Alert from "../../Alert/Alert";
 const CreateFolderModal = ({ handleOpenModal }) => {
   const { alertOn, setAlertOn, setAlertMessage } = useContext(AlertContext);
   const { user } = useContext(UserContext);
-  const { pathId, updateFolder, setUpdateFolder } = useContext(DriveDataContext);
+  const { pathId, updateFolder, setUpdateFolder } =
+    useContext(DriveDataContext);
   const [folderName, setFolderName] = useState();
 
   const createFolder = async () => {
@@ -39,7 +40,7 @@ const CreateFolderModal = ({ handleOpenModal }) => {
     setFolderName("");
     setUpdateFolder(!updateFolder);
     console.log(updateFolder);
-    handleOpenModal()
+    handleOpenModal();
   };
 
   return (

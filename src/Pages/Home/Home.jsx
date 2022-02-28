@@ -14,7 +14,7 @@ function Home() {
       <div className="button-container">
         <Link to="/reset-password">
           <button className="main__button" type="button">
-            I need new password
+            I forgot my password
           </button>
         </Link>
         <Link to="/signup">
