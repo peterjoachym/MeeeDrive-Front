@@ -4,12 +4,14 @@ import Login from "../../components/auth/Login/Login";
 import AlertContext from "../../contexts/AlertContext";
 import Alert from "../../components/Alert/Alert";
 import "./Home.css";
+import LogoFrontPage from "../../components/auth/LogoFrontPage/LogoFrontPage";
 
 function Home() {
   const { alertOn } = useContext(AlertContext);
 
   return (
     <>
+      <LogoFrontPage />
       <Login />
       <div className="button-container">
         <Link to="/reset-password">

@@ -1,3 +1,158 @@
-.drive-page-container{
-    /* background-color: aliceblue; */
+.drive__header__container {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--theme-color);
+}
+
+.search__bar__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.search__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.search__input {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 100%;
+  height: 4vh;
+  border-radius: 3rem;
+  font-size: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-family: inherit;
+  border: none;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px var(--theme-background-color);
+  background-color: var(--theme-input-color);
+  position: relative;
+}
+
+.user__profile__button {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--theme-color);
+  width: 19vw;
+  height: 9vh;
+  border: solid 1px var(--theme-color);
+  margin: 1%;
+}
+
+.drive__dashboard__container {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 10vh;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 1px var(--theme-color);
+  margin-bottom: 1%;
+}
+
+.home__button {
+  width: 20vh;
+}
+
+.home__icon {
+  color: var(--theme-color);
+}
+
+.breadcrumbs {
+  width: 80vh;
+  color: var(--theme-color);
+}
+
+.drive__display__container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 78vh;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+  margin: 1%;
+}
+
+.icon__container__button,
+.options__dots__button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.folder__items__container {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 9vh;
+  border: solid 1px var(--theme-color);
+  margin: 1%;
+}
+
+.folder__container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 10vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.folder__icon {
+  color: var(--theme-color);
+  height: 8vh;
+  width: 20vw;
+}
+
+.folder__name {
+  color: var(--theme-color);
+  font-size: 3vh;
+  width: 70w;
+}
+
+.options__dots__icon {
+  color: var(--theme-color);
+}
+
+.drive__utility__nav__bar__container {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--theme-color);
+}
+
+.bin__icon {
+  color: var(--theme-color);
+  font-size: 9vh !important;
+}
+
+.create__file__icon {
+  color: var(--theme-color);
+  font-size: 9vh !important;
+}
+
+.upload__file__icon {
+  color: var(--theme-color);
+  font-size: 9vh !important;
+}
+
+.create__new__folder__icon {
+  color: var(--theme-color);
+  font-size: 9vh !important;
 }

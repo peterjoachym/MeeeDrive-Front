@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
-import AlertContext from "../../../contexts/AlertContext";
-import UserContext from "../../../contexts/UserContext";
-import DriveDataContext from "../../../contexts/DriveDataContext";
-import Alert from "../../Alert/Alert";
+import AlertContext from "../../../../contexts/AlertContext";
+import UserContext from "../../../../contexts/UserContext";
+import DriveDataContext from "../../../../contexts/DriveDataContext";
+import Alert from "../../../Alert/Alert";
 
 const CreateFolderModal = ({ handleOpenModal }) => {
   const { alertOn, setAlertOn, setAlertMessage } = useContext(AlertContext);

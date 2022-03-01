@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import AlertContext from "../../../contexts/AlertContext";
 import Alert from "../../Alert/Alert";
+import LogoFrontPage from "../LogoFrontPage/LogoFrontPage";
 
 function ResetPassword() {
   const { alertOn, setAlertOn, setAlertMessage } = useContext(AlertContext);
@@ -31,6 +32,7 @@ function ResetPassword() {
 
   return (
     <>
+      <LogoFrontPage />
       <form className="auth-form" onSubmit={handleSubmit}>
         <h1 className="title">Reset Password</h1>
         <label htmlFor="email" className="auth-input">

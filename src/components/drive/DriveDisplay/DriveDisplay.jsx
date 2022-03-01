@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import DriveDataContext from "../../../contexts/DriveDataContext";
-import Folder from "../Folder/Folder";
-import File from "../File/File";
+import Folder from "../ComponentsDrive/Folder/Folder";
+import File from "../ComponentsDrive/File/File";
 
 const DriveDisplay = () => {
   const { filesData, foldersData, pathId } = useContext(DriveDataContext);
 
   return (
-    <div>
+    <div className="drive__display__container">
       {foldersData &&
         foldersData
           .filter((folder) => folder.folder_parent_id === pathId)

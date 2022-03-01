@@ -6,6 +6,7 @@ import AlertContext from "../../../contexts/AlertContext";
 import Alert from "../../Alert/Alert";
 
 import Actions from "../../../actions/actions";
+import LogoFrontPage from "../LogoFrontPage/LogoFrontPage";
 
 // import { UPDATE_FIRSTNAME, UPDATE_EMAIL } from "../../../actions/actions.json";
 
@@ -52,6 +53,7 @@ function SignUp() {
 
   return (
     <>
+      <LogoFrontPage />
       <form className="auth-form" onSubmit={handleSubmit}>
         <label htmlFor="email" className="auth-input">
           <input

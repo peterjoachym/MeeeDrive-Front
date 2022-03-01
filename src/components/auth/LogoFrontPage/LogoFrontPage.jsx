@@ -2,7 +2,7 @@ import React from "react";
 
 function LogoFrontPage() {
   return (
-    <>
+    <div className="logo__container">
       <span id="welcome" className="heading">
         Welcome to
       </span>
@@ -12,7 +12,7 @@ function LogoFrontPage() {
       <span id="drive" className="heading">
         Drive
       </span>
-    </>
+    </div>
   );
 }
 

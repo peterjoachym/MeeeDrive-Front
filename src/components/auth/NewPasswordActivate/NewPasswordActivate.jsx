@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import AlertContext from "../../../contexts/AlertContext";
 import Alert from "../../Alert/Alert";
+import LogoFrontPage from "../LogoFrontPage/LogoFrontPage";
 
 function NewPasswordActivate() {
   const { alertOn, setAlertMessage, setAlertOn } = useContext(AlertContext);
@@ -43,7 +44,8 @@ function NewPasswordActivate() {
   };
 
   return (
-    <div className="acivate-account-container">
+    <>
+      <LogoFrontPage />
       <form className="auth-form" onSubmit={handleSubmit}>
         <h1>New password activation</h1>
         <label htmlFor="Password" className="auth-input">
@@ -71,7 +73,7 @@ function NewPasswordActivate() {
         </div>
       </form>
       {alertOn && <Alert />}
-    </div>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import SignUp from "./components/auth/SinUp/SignUp";
@@ -6,7 +6,6 @@ import DrivePage from "./Pages/DrivePage/DrivePage";
 import ResetPassword from "./components/auth/ResetPasword/ResetPassword";
 import AccountActivate from "./components/auth/AccountActivate/AccountActivate";
 import NewPasswordActivate from "./components/auth/NewPasswordActivate/NewPasswordActivate";
-import LogoFrontPage from "./components/LogoFrontPage/LogoFrontPage";
 import UserContext from "./contexts/UserContext";
 import { DriveDataContextProvider } from "./contexts/DriveDataContext";
 import "./App.css";
@@ -14,7 +13,6 @@ import "./App.css";
 function App() {
   const { user, setRefreshTokenRef, refreshTokenRef, refreshToken } =
     useContext(UserContext);
-  const [header, setHeader] = useState(true);
 
   useEffect(() => {
     setRefreshTokenRef((prevState) => {
@@ -27,7 +25,6 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">{header && <LogoFrontPage />}</header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
@@ -43,7 +40,7 @@ function App() {
             path="/drive"
             element={
               <DriveDataContextProvider>
-                <DrivePage setHeader={setHeader} />
+                <DrivePage />
               </DriveDataContextProvider>
             }
           />
