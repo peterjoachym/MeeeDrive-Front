@@ -5,7 +5,7 @@ const Bin = () => {
   return (
     <>
       <button className="icon__container__button bin" type="button">
-        <BinIcon className="bin__icon" />
+        <BinIcon className="utility__bar__icon" />
       </button>
     </>
   );

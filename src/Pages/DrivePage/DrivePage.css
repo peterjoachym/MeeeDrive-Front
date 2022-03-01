@@ -137,22 +137,7 @@
   border: solid 1px var(--theme-color);
 }
 
-.bin__icon {
-  color: var(--theme-color);
-  font-size: 9vh !important;
-}
-
-.create__file__icon {
-  color: var(--theme-color);
-  font-size: 9vh !important;
-}
-
-.upload__file__icon {
-  color: var(--theme-color);
-  font-size: 9vh !important;
-}
-
-.create__new__folder__icon {
-  color: var(--theme-color);
-  font-size: 9vh !important;
-}
+.utility__bar__icon {
+    color: var(--theme-color);
+    font-size: 7vh !important;
+  }

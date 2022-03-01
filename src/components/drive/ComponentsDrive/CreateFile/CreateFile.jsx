@@ -4,8 +4,8 @@ import CreateFileIcon from "@mui/icons-material/NoteAdd";
 const CreateFile = () => {
   return (
     <>
-      <button className="icon__container__button create-file" type="button">
-        <CreateFileIcon className="create__file__icon" />
+      <button className="icon__container__button" type="button">
+        <CreateFileIcon className="utility__bar__icon" />
       </button>
     </>
   );

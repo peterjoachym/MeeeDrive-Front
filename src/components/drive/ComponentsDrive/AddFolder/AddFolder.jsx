@@ -16,7 +16,7 @@ const AddFolder = () => {
         type="button"
         onClick={handleOpenModal}
       >
-        <CreateNewFolderIcon className="create__new__folder__icon" />
+        <CreateNewFolderIcon className="utility__bar__icon" />
       </button>
       {openModal && (
         <CreateFolderModal
