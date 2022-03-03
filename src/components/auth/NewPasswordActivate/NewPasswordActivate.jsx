@@ -23,7 +23,7 @@ function NewPasswordActivate() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== repeatPassword) {
-      setAlertMessage("Your passwords are not the!");
+      setAlertMessage("Your passwords are not the same!");
       setAlertOn(true);
     } else {
       try {
@@ -31,7 +31,7 @@ function NewPasswordActivate() {
           `${process.env.REACT_APP_API_URL}/api/auth/new-password/${token}`,
           { password }
         );
-        setAlertMessage("Now you can go back the Wonderland !");
+        setAlertMessage("Welcome back to Wonderland !");
         setAlertOn(true);
         navigate("/");
       } catch (err) {
@@ -47,11 +47,11 @@ function NewPasswordActivate() {
     <>
       <LogoFrontPage />
       <form className="auth-form" onSubmit={handleSubmit}>
-        <h1>New password activation</h1>
-        <label htmlFor="Password" className="auth-input">
+        <label htmlFor="password" className="auth-input">
           <input
             type="password"
             id="password"
+            className="input"
             placeholder="Enter your new password"
             value={password}
             onChange={handlePassword}
@@ -61,16 +61,15 @@ function NewPasswordActivate() {
           <input
             type="password"
             id="repeat-password"
+            className="input"
             placeholder="Enter your new password once more"
             value={repeatPassword}
             onChange={handleRepeatPassword}
           />
         </label>
-        <div className="buttons">
-          <button className="auth-submit" type="submit">
-            Let me In
-          </button>
-        </div>
+        <button className="main__button" type="submit">
+          Let me In
+        </button>
       </form>
       {alertOn && <Alert />}
     </>

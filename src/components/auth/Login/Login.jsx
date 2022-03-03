@@ -24,7 +24,7 @@ const Login = () => {
           { withCredentials: true }
         );
         refreshToken();
-        navigate("/drive");
+        navigate("/");
       } catch (err) {
         if (!err.response) {
           setAlertMessage("Ooops something get wrong in the foreign land !");

@@ -1,7 +1,7 @@
 import React from "react";
 
-const CreateFileModal = () => {
+const UploadFileModal = () => {
   return <div>CreateFileModal</div>;
 };
 
-export default CreateFileModal;
+export default UploadFileModal;

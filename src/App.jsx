@@ -26,7 +26,18 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            user.role === 0 ? (
+              <DriveDataContextProvider>
+                <DrivePage />
+              </DriveDataContextProvider>
+            ) : (
+              <Home />
+            )
+          }
+        />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/account-activate/:token" element={<AccountActivate />} />
@@ -34,17 +45,6 @@ function App() {
           path="/new-password-activate/:token"
           element={<NewPasswordActivate />}
         />
-
-        {(user.role === 1 || user.role === 0) && (
-          <Route
-            path="/drive"
-            element={
-              <DriveDataContextProvider>
-                <DrivePage />
-              </DriveDataContextProvider>
-            }
-          />
-        )}
       </Routes>
     </div>
   );

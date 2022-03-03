@@ -28,17 +28,16 @@
   margin-top: 4%;
   margin-bottom: 4%;
   width: 100%;
-  height: 4vh;
+  height: 6vh;
   border-radius: 3rem;
   font-size: 3vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  font-family: inherit;
+  padding-top: 1%;
+  font-family: "Neucha", cursive;
   border: none;
   text-align: center;
   transition: 0.2s;
   box-shadow: inset 0 0 5px var(--theme-background-color);
-  background-color: var(--theme-input-color);
+  background-color: var(--theme-color);
   position: relative;
 }
 
@@ -69,6 +68,7 @@
 
 .home__icon {
   color: var(--theme-color);
+  font-size: 7vh !important;
 }
 
 .breadcrumbs {
@@ -99,7 +99,9 @@
   width: 95vw;
   height: 9vh;
   border: solid 1px var(--theme-color);
+  border-radius: 1rem;
   margin: 1%;
+  position:relative;
 }
 
 .folder__container {
@@ -113,14 +115,15 @@
 
 .folder__icon {
   color: var(--theme-color);
-  height: 8vh;
-  width: 20vw;
+  font-size: 6vh !important;
+  
 }
 
 .folder__name {
   color: var(--theme-color);
-  font-size: 3vh;
+  font-size: 3.5vh;
   width: 70w;
+  font-family:"Neucha", cursive;
 }
 
 .options__dots__icon {
@@ -134,7 +137,8 @@
   width: 95vw;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px var(--theme-color);
+  border-radius: 1rem;
+  /* border: solid 1px var(--theme-color); */
 }
 
 .utility__bar__icon {

@@ -47,11 +47,11 @@ function AccountActivate() {
     <>
       <LogoFrontPage />
       <form className="auth-form" onSubmit={handleSubmit}>
-        <h1>Account activation</h1>
         <label htmlFor="Password" className="auth-input">
           <input
             type="password"
             id="password"
+            className="input"
             placeholder="Enter your new password"
             value={password}
             onChange={handlePassword}
@@ -61,16 +61,15 @@ function AccountActivate() {
           <input
             type="password"
             id="repeat-password"
+            className="input"
             placeholder="Enter your new password once more"
             value={repeatPassword}
             onChange={handleRepeatPassword}
           />
         </label>
-        <div className="buttons">
-          <button className="auth-submit" type="submit">
-            Let me In
-          </button>
-        </div>
+        <button className="main__button" type="submit">
+          Let me In
+        </button>
       </form>
       {alertOn && <Alert />}
     </>

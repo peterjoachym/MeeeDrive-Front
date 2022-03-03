@@ -6,12 +6,12 @@ import UploadFile from "../ComponentsDrive/UploadFile/UploadFile";
 
 const DriveUtilityNavBar = () => {
   return (
-    <divd className="drive__utility__nav__bar__container">
+    <div className="drive__utility__nav__bar__container">
       <Bin />
       <CreateFile />
       <UploadFile />
       <AddFolder />
-    </divd>
+    </div>
   );
 };
 

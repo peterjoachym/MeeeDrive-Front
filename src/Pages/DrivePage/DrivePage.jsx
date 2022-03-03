@@ -16,8 +16,6 @@ const DrivePage = () => {
   const { setFoldersData, setFilesData, updateFolder } =
     useContext(DriveDataContext);
 
-  // part of the code needed in order to hide front page logo
-
   const getFoldersData = async () => {
     try {
       const resp = await axios.get(

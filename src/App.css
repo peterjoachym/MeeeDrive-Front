@@ -86,6 +86,8 @@ h1:focus {
   --theme-background-color: black;
   --theme-input-color:rgb(208, 217, 243);
   --theme-box-shadow-active-color:rgb(191, 201, 207);
+  
+  font-family: "Neucha", cursive;
 }
 
 .App {

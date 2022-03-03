@@ -56,7 +56,7 @@
   text-align: center;
   transition: 0.2s;
   box-shadow: inset 0 0 5px var(--theme-background-color);
-  background-color: var(--theme-input-color);
+  background-color: var(--theme-color);
   position: relative;
 }
 
@@ -76,7 +76,7 @@
   border-radius: 3rem;
   width: 30vw;
   height: 6vh;
-  font-family: inherit;
+  font-family: "Neucha", cursive;
   font-size: 1rem;
   position: relative;
   transition: 0.2s;
@@ -90,22 +90,22 @@
   box-shadow: 0 0 5px var(--theme-box-shadow-active-color);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 915px) {
   .heading {
     font-size: 8vh;
   }
 
   .input {
-    width: 25vw;
+    width: 27vw;
     margin: 2%;
   }
   .button-container {
-    width: 25vw;
+    width: 27vw;
     justify-content: space-between;
   }
 
   .main__button {
-    width: 10vw;
+    width: 12vw;
     font-size: 1.2rem;
   }
 } ;
